@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>История Димы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="c" width="320" height="180"></canvas>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div id="quest"></div>
+    <div id="side"></div>
+    <button id="mute" type="button" aria-label="Звук">🔊</button>
+    <div id="warn"></div>
+    <div id="barwrap">
+      <div id="barLabel"></div>
+      <div id="bar"><div id="fill"></div></div>
+    </div>
+    <div id="hint"></div>
+  </div>
+
+  <!-- Диалоги -->
+  <div id="dialog">
+    <div id="dname"></div>
+    <div id="dtext"></div>
+    <div id="dnext">▼</div>
+  </div>
+
+  <!-- Главное меню -->
+  <div id="menu" class="screen on">
+    <h1>История<br>Димы</h1>
+    <p class="sub">по мотивам реальных событий</p>
+    <button id="startBtn" type="button">НАЧАТЬ</button>
+    <p class="keys">Ходить: WASD / стрелки / джойстик<br>Действие: ПРОБЕЛ / клик / кнопка ТАП</p>
+    <p class="age">18+ · грубая лексика</p>
+  </div>
+
+  <!-- Конец / провал -->
+  <div id="end" class="screen">
+    <h1 id="endTitle">КОНЕЦ</h1>
+    <p class="sub" id="endSub"></p>
+    <button id="againBtn" type="button">ЕЩЁ РАЗ</button>
+  </div>
+</div>
+
+<!-- Экранные кнопки для телефона -->
+<div id="controls">
+  <div id="stick"><div id="knob"></div></div>
+  <button id="act" type="button">ТАП</button>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
